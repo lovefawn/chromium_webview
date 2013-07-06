@@ -1,3 +1,7 @@
+// Copyright (c) 2013 mogoweb. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
 package com.mogoweb.chrome.impl;
 
 import org.chromium.android_webview.AwContents;
@@ -100,12 +104,13 @@ public class ChromeSettingsProxy extends WebSettings {
 
     @Override
     public void setSaveFormData(boolean save) {
-        mAwSettings.setSaveFormData(save);
+        // mAwSettings.setSaveFormData(save);
     }
 
     @Override
     public boolean getSaveFormData() {
-        return mAwSettings.getSaveFormData();
+        return false;
+        // return mAwSettings.getSaveFormData();
     }
 
     @Override
